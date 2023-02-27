@@ -10,7 +10,7 @@ Emotion.injectGlobal({
     "fontSize": "10px",
   },
   "html, body, #root": {
-    "fontFamily": Theme.Constants.fontFamily,
+    "fontFamily": Theme.Typography.Family.sans,
     "height": "100%",
     "width": "100%",
   },
