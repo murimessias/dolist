@@ -9,7 +9,9 @@
     "rescript:start": "rescript build -w"
   },
   "dependencies": {
+    "@emotion/css": "11.10.6",
     "@rescript/react": "0.10.3",
+    "@rescriptbr/ancestor": "0.8.0",
     "@vitejs/plugin-react": "2.2.0",
     "react": "18.2.0",
     "react-dom": "18.2.0",
