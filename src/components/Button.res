@@ -3,16 +3,14 @@ open Render
 module Styles = {
   open Emotion
 
-  let {toString: colorToString} = module(Theme.Colors)
-
   let button = css({
     "all": "unset",
     // Custom Styles
     "align-items": "center",
-    "backgroundColor": Theme.Colors.primary->colorToString,
+    "backgroundColor": Theme.Colors.primary->Theme.Utils.hexToString,
     "borderRadius": Theme.Shapes.Radii.md,
     "boxSizing": "border-box",
-    "color": Theme.Colors.white->colorToString,
+    "color": Theme.Colors.white->Theme.Utils.hexToString,
     "cursor": "pointer",
     "display": "inline-flex",
     "fontSize": Theme.Typography.FontSizes.md,
@@ -26,7 +24,7 @@ module Styles = {
     "textAlign": "center",
     "transition": "250ms ease",
     "&:hover": {
-      "backgroundColor": Theme.Colors.primaryDark->colorToString,
+      "backgroundColor": Theme.Colors.primaryDark->Theme.Utils.hexToString,
     },
   })
 }

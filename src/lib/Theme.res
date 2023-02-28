@@ -10,11 +10,14 @@ module Colors = {
   let black = #hex("#070707")
   let white = #hex("#FFFFFF")
   let red = #hex("#FF1B51")
+}
 
-  let toString = color =>
+module Utils = {
+  let hexToString = color => {
     switch color {
     | #hex(color) => color
     }
+  }
 }
 
 module Typography = {

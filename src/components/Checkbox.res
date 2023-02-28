@@ -1,8 +1,6 @@
 module Styles = {
   open Emotion
 
-  let {toString: colorToString} = module(Theme.Colors)
-
   let fillAnimation = keyframes({
     "0": {
       "transform": "scale(0)",
@@ -22,11 +20,11 @@ module Styles = {
     },
     "> span": {
       "alignItems": "center",
-      "borderColor": Theme.Colors.primary->colorToString,
+      "borderColor": Theme.Colors.primary->Theme.Utils.hexToString,
       "borderRadius": Theme.Shapes.Radii.md,
       "borderStyle": "solid",
       "borderWidth": "1px",
-      "color": Theme.Colors.white->colorToString,
+      "color": Theme.Colors.white->Theme.Utils.hexToString,
       "display": "inline-flex",
       "height": "2.4rem",
       "justifyContent": "center",
@@ -40,7 +38,7 @@ module Styles = {
     "> input:checked + span": {
       "animation": `${fillAnimation} 300ms forwards`,
       "animationDelay": "100ms",
-      "backgroundColor": Theme.Colors.primary->colorToString,
+      "backgroundColor": Theme.Colors.primary->Theme.Utils.hexToString,
       "> svg": {
         "animation": `${fillAnimation} 300ms forwards`,
         "animationDelay": "100ms",
