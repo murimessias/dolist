@@ -1,7 +1,7 @@
 open Ancestor.Default
 
 Emotion.injectGlobal({
-  "*": {
+  "*, *::before, *::after": {
     "boxSizing": "border-box",
     "margin": "0",
     "padding": "0",
